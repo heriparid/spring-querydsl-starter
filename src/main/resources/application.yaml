@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    ## Database related configuration
+    url: jdbc:mysql://localhost:3306/example?useSSL=false
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver # Specify driver class
+  jpa:
+    hibernate:
+      ddl-auto: update # Automatically create tables and update table structure, careful use of production environment
+    show-sql: true # Print executed SQL
